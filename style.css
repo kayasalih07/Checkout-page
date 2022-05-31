@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  font-size: 0, 9rem;
+}
+
+body {
+  width: 100%;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+button {
+  cursor: pointer;
+}
+.container {
+  gap: 3rem;
+  margin: auto;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 60%;
+}
+
+.contact {
+  padding-bottom: 2rem;
+}
+
+.shipping {
+  padding-bottom: 2rem;
+}
+
+h2 {
+  padding-bottom: 0.5rem;
+}
+.label {
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+  color: rgba(53, 52, 52, 0.933);
+}
+
+i {
+  position: absolute;
+  padding-top: 8px;
+  padding-left: 8px;
+  font-size: 1.2rem;
+  color: rgb(122, 122, 122);
+}
+
+div.input {
+  position: relative;
+}
+
+.contact input,
+.shipping input {
+  padding-left: 2.2rem;
+  width: 30rem;
+  height: 2.3rem;
+  border: 1px solid lightgray;
+  border-radius: 0.3rem;
+  outline: none;
+}
+select {
+  padding-left: 2rem;
+  width: 30rem;
+  height: 2.3rem;
+  border: 1px solid #eeee;
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+.countrypcode {
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.input-bottom {
+  padding-left: 2.2rem;
+  width: 10rem;
+  height: 2.3rem;
+  border: 1px solid lightgray;
+  border-radius: 0.3rem;
+  outline: none;
+}
+.country {
+  padding-right: 5rem;
+}
+
+option {
+  padding: 0 4rem;
+}
+
+.basket {
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+img {
+  width: 12rem;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.item-1,
+.item-2 {
+  display: flex;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-around;
+  width: 6rem;
+  height: 2rem;
+  border: 1px solid #eeee;
+  border-radius: 0.3rem;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(65, 65, 65);
+  border-radius: 0.4rem;
+  width: 8rem;
+  height: 3rem;
+  margin: 1rem;
+}
+
+.btn {
+  font-size: 1.3rem;
+  font-weight: 800;
+  height: 1.7rem;
+  width: 1.7rem;
+  border: none;
+  background-color: #eeee;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  padding-bottom: 3rem;
+}
+
+.price {
+  padding-top: 1rem;
+}
+.old-price {
+  display: inline;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.dis-price {
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: darkorange;
+}
+
+.remove-btn {
+  font-size: 1rem;
+  padding: 0.4rem;
+  border: none;
+  border: 1px solid rgb(65, 65, 65);
+  border-radius: 0.4rem;
+}
+.continue {
+  width: 20%;
+  margin-top: 2rem;
+  margin: auto;
+}
+.continue-btn {
+  background-color: darkorange;
+  color: white;
+  font-size: 1rem;
+  padding: 0.4rem;
+  margin: auto;
+  height: 3rem;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.item-1,
+.item-2 {
+  padding-bottom: 1rem;
+}
+.postage {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(65, 65, 65);
+  font-size: 1.3rem;
+}
+
+.total {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(65, 65, 65);
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .basket {
+    width: 80%;
+  }
+  .form {
+    width: 80%;
+  }
+  h2 {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .basket {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
+  h2 {
+    padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .basket {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-1,
+  .item-2 {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .form {
+    width: 100%;
+  }
+  select,
+  .contact input,
+  .shipping input {
+    width: 80%;
+  }
+  .countrypcode {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  h2 {
+    padding-top: 2rem;
+  }
+}

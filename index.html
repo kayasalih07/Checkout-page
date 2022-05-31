@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <div class="container">
+      <div class="form">
+        <div class="contact">
+          <h2>Contact Information</h2>
+
+          <div class="input">
+            <label class="label" for="email">Email</label>
+            <i class="fa-solid fa-envelope"></i>
+            <input class="input" type="email" name="Email" id="email" />
+          </div>
+          <div class="input">
+            <label class="label" for="phone">Phone</label>
+            <i class="fa-solid fa-phone"></i>
+            <input class="input" type="tel" name="Phone" id="phone" />
+          </div>
+        </div>
+
+        <div class="shipping">
+          <h2>Shipping Address</h2>
+          <div class="input">
+            <label class="label" for="name">Full Name</label>
+            <i class="fa-solid fa-user"></i>
+            <input class="input" type="text" name="Full Name" id="name" />
+          </div>
+          <div class="input">
+            <label class="label" for="address">Address</label>
+            <i class="fa-solid fa-house-chimney"></i>
+            <input class="input" type="text" name="Adres" id="address" />
+          </div>
+          <div class="input">
+            <label class="label" for="city">City</label>
+            <i class="fa-solid fa-city"></i>
+            <input class="input" type="text" name="City" id="city" />
+          </div>
+        </div>
+
+        <div class="countrypcode">
+          <div class="country">
+            <label class="label" for="country">Country</label>
+            <i class="fa-solid fa-earth-americas"></i>
+            <select class="input-bottom" name="country">
+              <option value="Turkey" selected><p>Turkey</p></option>
+              <option value="Germany"><p>Germany</p></option>
+              <option value="United Kingdom"><p>UK</p></option>
+              <option value="USA">USA</option>
+            </select>
+          </div>
+          <div class="postcode">
+            <label class="label" for="postcode">Postcode</label>
+            <i class="fa-solid fa-envelopes-bulk"></i>
+            <input
+              class="input-bottom"
+              type="zip"
+              name="Postcode"
+              id="postcode"
+            />
+          </div>
+        </div>
+        <div class="info">
+          <input type="checkbox" name="info" id="info" />
+          <label for="info">See this information next time</label>
+        </div>
+      </div>
+      <div class="basket">
+        <div class="item-1">
+          <div class="img">
+            <img src="./Image/photo1.png" alt="item" />
+          </div>
+          <div class="item-info">
+            <p>Vintage Backbag</p>
+            <div class="price">
+              <p class="dis-price" id="bag-price">$54.99</p>
+              <span class="old-price"> $94.99</span>
+            </div>
+            <div class="counter">
+              <button class="btn btn-negative">-</button>
+              <p class="quantity">1</p>
+              <button class="btn btn-positive">+</button>
+            </div>
+            <div class="remove">
+              <button class="remove-btn">Remove</button>
+            </div>
+          </div>
+        </div>
+        <div class="item-2">
+          <div class="img">
+            <img src="./Image/photo2.png" alt="item" />
+          </div>
+          <div class="item-info">
+            <p>Shoes</p>
+            <div class="price">
+              <p class="dis-price" id="shoe-price">$74.99</p>
+              <span class="old-price"> $124.99</span>
+            </div>
+            <div class="counter">
+              <button class="btn btn-minus">-</button>
+              <p class="quantity">1</p>
+              <button class="btn btn-plus">+</button>
+            </div>
+            <div class="remove">
+              <button class="remove-btn">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="postage">
+          <span>Shipping</span>
+          <span id="postage">$19</span>
+        </div>
+        <div class="total">
+          <span>Total</span>
+          <span class="total-price">$</span>
+        </div>
+      </div>
+    </div>
+    <div class="continue">
+      <button class="continue-btn">Continue</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
